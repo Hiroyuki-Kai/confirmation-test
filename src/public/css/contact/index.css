@@ -1,0 +1,152 @@
+.contact-form__content {
+  margin: 0 auto;
+  padding: 30px 15px;
+  max-width: 1230px;
+}
+
+.contact-form__heading {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-form__heading h2 {
+  color: #8F8578;
+  font-size: 30px;
+}
+
+.form {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+
+.form__group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.form__group-title {
+  width: 225px;
+  text-align: left;
+}
+
+.form__group-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form__group-content--row {
+  display: flex;
+  gap: 20px;
+}
+
+.form__label--required {
+  margin-left: 5px;
+  padding: 4px 6px;
+  border-radius: 3px;
+  color: red;
+}
+
+.form__input--name input {
+  display: flex;
+  padding: 10px;
+  width: 250px;
+  background-color: #f5f4f4;
+  border: 1px solid #f5f4f4;
+  border-radius: 3px;
+  appearance: none;
+}
+
+.form__input--tel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form__input--tel input {
+  width: 190px;
+  padding: 10px;
+  height: 40px;
+  background-color: #f5f4f4;
+  border: 1px solid #f5f4f4;
+  border-radius: 3px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.tel__hyphen {
+  color: #8F8578;
+  font-weight: bold;
+}
+
+.form__group--radio {
+  justify-content: flex-start;
+}
+
+.form__input--radio {
+  display: flex;
+  gap: 32px;
+}
+
+.form__input--radio input[type="radio"] {
+  accent-color: #8F8578;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+  padding: 10px;
+  width: 600px;
+  background-color: #f5f4f4;
+  border: 1px solid #f5f4f4;
+  border-radius: 3px;
+  appearance: none;
+}
+
+.form__group-content {
+  width: 600px;
+}
+
+.form__input--select select {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background-color: #f5f4f4;
+  border: 1px solid #f5f4f4;
+  border-radius: 3px;
+  appearance: none;
+}
+
+.form__input--text input {
+  height: 40px;
+}
+
+.form__input--textarea textarea {
+  height: 180px;
+}
+
+.form__button {
+  margin-top: 30px;
+}
+
+.form__button-submit {
+  padding: 10px;
+  width: 20%;
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  background: #8F8578;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.form__error {
+  color: red;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+}

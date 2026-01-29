@@ -1,0 +1,238 @@
+/* ===== 共通 ===== */
+body {
+  background: #f7f5f2;
+  color: #6f675f;
+}
+
+.header__nav button {
+  position: absolute;
+  right: 20px;
+  top: 28px;
+  font-size: 12px;
+  text-decoration: none;
+  border: 1px solid #d6cfc7;
+  padding: 6px 14px;
+  color: #b5a89b;
+  background: #f8f6f3;
+}
+
+.admin {
+  max-width: 1000px;
+  margin: 0 auto 80px;
+}
+
+.admin__title {
+  text-align: center;
+  font-size: 28px;
+  margin: 40px 0 30px;
+  letter-spacing: 0.05em;
+}
+
+/* ===== 検索エリア ===== */
+.admin__search {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.admin__search input,
+.admin__search select {
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #d8d2cb;
+  background: #fff;
+  color: #6f675f;
+  font-size: 11px;
+}
+
+.admin__search input[type="text"] {
+  width: 240px;
+}
+
+.admin__search select {
+  width: 120px;
+}
+
+.admin__search input[type="date"] {
+  width: 150px;
+}
+
+.search-btn {
+  height: 36px;
+  padding: 0 20px;
+  background: #8b7f73;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.reset-btn {
+  height: 36px;
+  padding: 0 20px;
+  border: 1px solid #d8d2cb;
+  background: #b0906d;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* ===== エクスポート ===== */
+.admin__export-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.admin__export {
+  margin-bottom: 14px;
+}
+
+.admin__export a {
+  font-size: 14px;
+  padding: 6px 16px;
+  border: 1px solid #d8d2cb;
+  color: #000;
+  text-decoration: none;
+  background: #ebc9a7;
+}
+
+/* 右側ページネーション */
+.admin__pagination nav {
+  display: flex;
+}
+
+.admin__pagination ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ===== テーブル ===== */
+.admin__table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.admin__table thead th {
+  background: #8b7f73;
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 12px;
+  text-align: left;
+}
+
+.admin__table tbody td {
+  padding: 14px 12px;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.admin__table tbody tr:hover {
+  background: #f4f2ef;
+}
+
+/* ===== 詳細ボタン ===== */
+.detail-btn {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  border: 1px solid #d8d2cb;
+  background: #fff;
+  color: #6f675f;
+  text-decoration: none;
+}
+
+/* ===== ページネーション ===== */
+.admin__pagination li {
+  border: 1px solid #e0d9cf;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #fff;
+}
+
+.admin__pagination li a,
+.admin__pagination li span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #8f8578;
+  font-size: 12px;
+}
+
+.admin__pagination li.active span {
+  background: #8f8578;
+  color: #fff;
+}
+
+.admin__pagination li.disabled span {
+  color: #ccc;
+}
+
+/* ===== モーダル ===== */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 1000;
+}
+
+.modal:target {
+  display: block;
+}
+
+.modal__content {
+  width: 680px;
+  background: #fff;
+  margin: 80px auto;
+  padding: 40px 50px;
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #6f675f;
+}
+
+.modal__list {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  row-gap: 14px;
+  column-gap: 20px;
+  font-size: 14px;
+}
+
+.modal__list dt {
+  font-weight: normal;
+  color: #8b7f73;
+}
+
+.modal__list dd {
+  margin: 0;
+  color: #6f675f;
+}
+
+/* ===== 削除ボタン ===== */
+.delete-btn {
+  display: block;
+  margin: 32px auto 0;
+  padding: 10px 32px;
+  background: #c0392b;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}

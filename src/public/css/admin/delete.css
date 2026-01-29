@@ -1,0 +1,54 @@
+/* 背景の暗転 */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* モーダル本体 */
+.modal-card {
+  background: #fff;
+  width: 600px;
+  padding: 40px;
+  position: relative;
+  border-radius: 4px;
+}
+
+/* ×ボタン */
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #999;
+}
+
+/* タイトル */
+.modal-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* 詳細表示 */
+.modal-row {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* 削除ボタン */
+.delete-btn {
+  display: block;
+  margin: 30px auto 0;
+  padding: 8px 24px;
+  background: #c0392b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
