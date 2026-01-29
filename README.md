@@ -19,21 +19,31 @@ FashionablyLate（お問い合わせフォーム & 管理画面）
 
 ### 3. Composerインストール
 
-    docker-compose exec php composer install
+    docker-compose exec php up -d --build
+    composer install
 
 ### 4. .env作成
 
-    cp .env.example .env
+    docker-compose exec php cp .env.example .env
 
-.env の DB 設定を確認してください。
+**作成した.env の DB 設定の以下の項目を修正**<br>
+**※ .env はホスト側（VSCodeなど）で編集してください**
+
+- DB_HOST=mysql
+- DB_DATABASE=laravel_db
+- DB_USERNAME=laravel_user
+- DB_PASSWORD=laravel_pass
 
 ### 5. アプリケーションキー生成
 
     docker-compose exec php php artisan key:generate
 
-### 6. マイグレーション & シーディング
+### 6. マイグレーション
 
-    docker-compose exec php php artisan migrate --seed
+    docker-compose exec php php artisan migrate
+
+### 7．シーディング
+    docker-compose exec php php artisan db:seed
 
 ------------------------------------------------------------------------
 

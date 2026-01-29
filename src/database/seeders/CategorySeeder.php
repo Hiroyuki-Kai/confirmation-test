@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Category;
+use Illuminate\Support\Facades\DB;
 
 class CategorySeeder extends Seeder
 {
@@ -14,16 +14,40 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        $items = [
-            '商品のお届けについて',
-            '商品の交換について',
-            '商品トラブル',
-            'ショップへのお問い合わせ',
-            'その他'
+        $param = [
+            'id' => '1',
+            'content' => '商品のお届けについて',
+            'created_at' => '2026-01-28 20:42:15',
+            'updated_at' => '2026-01-28 20:42:15'
         ];
-
-        foreach ($items as $item) {
-            Category::create(['content' => $item]);
-        }
+        DB::table('categories')->insert($param);
+        $param = [
+            'id' => '2',
+            'content' => '商品の交換について',
+            'created_at' => '2026-01-28 20:42:15',
+            'updated_at' => '2026-01-28 20:42:15'
+        ];
+        DB::table('categories')->insert($param);
+        $param = [
+            'id' => '3',
+            'content' => '商品トラブル',
+            'created_at' => '2026-01-28 20:42:15',
+            'updated_at' => '2026-01-28 20:42:15'
+        ];
+        DB::table('categories')->insert($param);
+        $param = [
+            'id' => '4',
+            'content' => 'ショップへのお問い合わせ',
+            'created_at' => '2026-01-28 20:42:15',
+            'updated_at' => '2026-01-28 20:42:15'
+        ];
+        DB::table('categories')->insert($param);
+        $param = [
+            'id' => '5',
+            'content' => 'その他',
+            'created_at' => '2026-01-28 20:42:15',
+            'updated_at' => '2026-01-28 20:42:15'
+        ];
+        DB::table('categories')->insert($param);
     }
 }
