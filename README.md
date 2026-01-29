@@ -84,11 +84,12 @@ FashionablyLate（お問い合わせフォーム & 管理画面）
 
 ## URL一覧（ローカル環境）
 
--   お問い合わせフォーム   http://localhost/
+-   お問い合わせフォーム    http://localhost/
 -   確認画面               http://localhost/contact/confirm
 -   完了画面               http://localhost/contact/thanks
 -   管理画面               http://localhost/admin
--   会員登録               http://localhost/auth/register
+-   会員登録               http://localhost/register
 -   ログイン               http://localhost/login
 
+※一部画面については、ページとして作成できていません。申し訳ございません。
 ------------------------------------------------------------------------
